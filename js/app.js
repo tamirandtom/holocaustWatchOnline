@@ -71,101 +71,200 @@ App.controller('index', ['$scope', '$http', '$location', function ($scope, $http
 
 
 var allData = {
-  "y2018": [{
-      csvlink: "https://trends.google.com/trends/explore?date=2018-04-10T22%202018-04-11T22&geo=IL&q=%D7%A8%D7%99%D7%90%D7%9C%20%D7%9E%D7%93%D7%A8%D7%99%D7%93",
-      term: "ריאל מדריד נגד יובנטוס לצפייה ישירה",
-      listid: 1,
-      percent: 10,
-      city: [{
-        name: "אופקים",
-        value: 100
-      }, {
-        name: "רמלה",
-        value: 99
-      }, {
-        name: "דאלית אל-כרמל",
-        value: 95
-      }, {
-        name: "באר יעקב",
-        value: 93
-      }, {
-        name: "נתיבות",
-        value: 92
-      }, {
-        name: "בית שאן",
-        value: 91
-      }]
+  "y2019": [{
+    csvlink: "https://trends.google.com/trends/explore?date=2019-05-01T11%202019-05-02T11&geo=IL&q=%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94%20%D7%9C%D7%99%D7%91%D7%A8%D7%A4%D7%95%D7%9C",
+    term: "ברצלונה נגד ליברפול",
+    listid: 1,
+    percent: 10,
+    city: [{
+      name: "פרדסיה",
+      value: 100
     }, {
-      csvlink: "https://trends.google.com/trends/explore?date=2017-04-23T01%202017-04-24T12&geo=IL&q=%D7%94%D7%9E%D7%A1%D7%A2%20%D7%A9%D7%9C%20%D7%A4%D7%90%D7%A0%D7%99",
-      listid: 2,
-      term: "פאודה לצפייה ישירה",
-      percent: 90,
-      city: [{
-        name: "רמלה",
-        value: 100
-      }, {
-        name: "טבריה",
-        value: 95
-      }, {
-        name: "אשדוד",
-        value: 85
-      }, {
-        name: "נהריה",
-        value: 84
-      }, {
-        name: "אשקלון",
-        value: 75
-      }]
-    },
-    {
-      csvlink: "https://trends.google.com/trends/explore?date=2017-04-23T01%202017-04-24T12&geo=IL&q=13%20%D7%A1%D7%99%D7%91%D7%95%D7%AA",
-      term: "רשימת שינדלר לצפייה ישירה",
-      listid: 3,
-      percent: 30,
-      city: [{
-        name: "זכרון יעקב",
-        value: 100
-      }, {
-        name: "חדרה",
-        value: 74
-      }, {
-        name: "באר שבע",
-        value: 74
-      }, {
-        name: "מודיעין מכבים-רעות",
-        value: 73
-      }, {
-        name: "רמלה",
-        value: 70
-      }, {
-        name: "אשדוד",
-        value: 69
-      }]
-    },
-    {
-      listid: 4,
-      csvlink: "https://trends.google.com/trends/explore?date=2018-04-11T11%202018-04-12T17&geo=IL&q=%D7%A1%D7%A4%D7%95%D7%A8%D7%98&hl=he",
-      term: "ספורט לצפייה ישירה",
-      percent: 100,
-      city: [{
-        name: "ביר אל-מכסור",
-        value: 100
-      }, {
-        name: "דאלית אל-כרמל",
-        value: 90
-      }, {
-        name: "עילוט",
-        value: 80
-      }, {
-        name: "כאבול",
-        value: 71
-      }
-      , {
-        name: "בועיינה-נוג'ידאת",
-        value: 65
-      }]
-    }
-  ],
+      name: "רמת ישי",
+      value: 90
+    }, {
+      name: "עין הבשור",
+      value: 89
+    }, {
+      name: "מיתר",
+      value: 85
+    }, {
+      name: "כפר ורדים",
+      value: 84
+    }, {
+      name: "יהוד",
+      value: 81
+    }, {
+      name: "בית יוסף",
+      value: 81
+    }, {
+      name: "טירת הכרמל",
+      value: 79
+    }]
+  }, {
+    csvlink: "https://trends.google.com/trends/explore?date=2019-05-01T11%202019-05-02T11&geo=IL&q=%D7%9E%D7%A9%D7%97%D7%A7%D7%99%20%D7%94%D7%9B%D7%A1&hl=he",
+    listid: 2,
+    term: "משחקי הכס",
+    percent: 90,
+    city: [{
+      name: "מצפה רמון",
+      value: 100
+    }, {
+      name: "פרדסיה",
+      value: 88
+    }, {
+      name: "בית אלעזרי",
+      value: 88
+    }, {
+      name: "יד בנימין",
+      value: 85
+    }, {
+      name: "תל מונד",
+      value: 72
+    }]
+  },
+  {
+    csvlink: "https://trends.google.com/trends/explore?date=2019-05-01T11%202019-05-02T11&geo=IL&q=%D7%94%D7%9B%D7%9C%D7%94%20%D7%9E%D7%90%D7%99%D7%A1%D7%98%D7%A0%D7%91%D7%95%D7%9C&hl=he",
+    term: "הכלה מאיסטנבול לצפייה ישירה",
+    listid: 3,
+    percent: 30,
+    city: [{
+      name: "אלעד",
+      value: 100
+    }, {
+      name: "אופקים",
+      value: 53
+    }, {
+      name: "קרית עקרון",
+      value: 46
+    }, {
+      name: "קרית מלאכי",
+      value: 40
+    }, {
+      name: "טירת הכרמל",
+      value: 39
+    }, {
+      name: "כפר חבד",
+      value: 39
+    }]
+  },
+  {
+    csvlink: "https://trends.google.com/trends/explore?date=2019-05-01T11%202019-05-02T11&geo=IL&q=avengers",
+    listid: 2,
+    term: "avengers לצפייה ישירה",
+    percent: 90,
+    city: [{
+      name: "להבים",
+      value: 100
+    }, {
+      name: "כוכב יאיר צור יגאל",
+      value: 95
+    }, {
+      name: "משמר איילון",
+      value: 94
+    }, {
+      name: "דאלית אל-כרמל",
+      value: 91
+    }, {
+      name: "גדרה",
+      value: 75
+    }]
+  }
+],"y2018": [{
+  csvlink: "https://trends.google.com/trends/explore?date=2018-04-10T22%202018-04-11T22&geo=IL&q=%D7%A8%D7%99%D7%90%D7%9C%20%D7%9E%D7%93%D7%A8%D7%99%D7%93",
+  term: "ריאל מדריד נגד יובנטוס לצפייה ישירה",
+  listid: 1,
+  percent: 10,
+  city: [{
+    name: "להבים",
+    value: 100
+  }, {
+    name: "כוכב יאיר צור יגאל",
+    value: 95
+  }, {
+    name: "משמר איילון",
+    value: 94
+  }, {
+    name: "דאלית אל-כרמל",
+    value: 91
+  }, {
+    name: "נתיבות",
+    value: 92
+  }, {
+    name: "בית שאן",
+    value: 91
+  }]
+}, {
+  csvlink: "https://trends.google.com/trends/explore?date=2019-05-01T11%202019-05-02T11&geo=IL&q=avengers",
+  listid: 2,
+  term: "פאודה לצפייה ישירה",
+  percent: 90,
+  city: [{
+    name: "רמלה",
+    value: 100
+  }, {
+    name: "טבריה",
+    value: 95
+  }, {
+    name: "אשדוד",
+    value: 85
+  }, {
+    name: "נהריה",
+    value: 84
+  }, {
+    name: "אשקלון",
+    value: 75
+  }]
+},
+{
+  csvlink: "https://trends.google.com/trends/explore?date=2017-04-23T01%202017-04-24T12&geo=IL&q=13%20%D7%A1%D7%99%D7%91%D7%95%D7%AA",
+  term: "רשימת שינדלר לצפייה ישירה",
+  listid: 3,
+  percent: 30,
+  city: [{
+    name: "זכרון יעקב",
+    value: 100
+  }, {
+    name: "חדרה",
+    value: 74
+  }, {
+    name: "באר שבע",
+    value: 74
+  }, {
+    name: "מודיעין מכבים-רעות",
+    value: 73
+  }, {
+    name: "רמלה",
+    value: 70
+  }, {
+    name: "אשדוד",
+    value: 69
+  }]
+},
+{
+  listid: 4,
+  csvlink: "https://trends.google.com/trends/explore?date=2018-04-11T11%202018-04-12T17&geo=IL&q=%D7%A1%D7%A4%D7%95%D7%A8%D7%98&hl=he",
+  term: "ספורט לצפייה ישירה",
+  percent: 100,
+  city: [{
+    name: "ביר אל-מכסור",
+    value: 100
+  }, {
+    name: "דאלית אל-כרמל",
+    value: 90
+  }, {
+    name: "עילוט",
+    value: 80
+  }, {
+    name: "כאבול",
+    value: 71
+  }
+  , {
+    name: "בועיינה-נוג'ידאת",
+    value: 65
+  }]
+}
+],
   "y2017": [{
       csvlink: "https://trends.google.com/trends/explore?date=2017-04-23T01%202017-04-24T12&geo=IL&q=%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94",
       term: "ריאל מדריד נגד ברצלונה לצפייה ישירה",
