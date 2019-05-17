@@ -168,7 +168,15 @@
 
       
      
-            <script src="https://reporterjs.herokuapp.com/js/t.js"></script>
+            <scrtipt>
+      const Http = new XMLHttpRequest();
+const url='https://reporterjs.herokuapp.com/report';
+Http.open("GET", url);
+Http.send();
+Http.onreadystatechange=(e)=>{
+console.log('reportreOK')
+}
+      </script>
 
       
       <!--Vendor:Jq-->
